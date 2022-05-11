@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Employee Information</title>
+</head>
+<center>
+	<font color="black" size="4" style="font-family: avenir">
+
+		<h1 style="color: DodgerBlue">Student Employee Database</h1>
+
+		<body bgcolor="lightgrey">
+			<form action="/getemployee" method ="GET">
+                       <button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GET Details</button><br><br>
+			</form>	
+			<form action="/addemp" autocomplete="on" method = "POST" enctype="multipart/form-data">
+
+		  		Net ID:<br> <input style="height:25px;font-size:14pt; color:grey;" type="number" name="net_id" autofocus size="40"><br><br>
+
+		  		First Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="name" ><br><br>
+
+		  		Current Job:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="current_job"><br><br>
+
+		  		Hours Planning:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="plan"><br><br>
+
+		  		Hours working:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="working"><br><br>
+
+		  		
+
+		  		<button type="submit" style="background: grey; height: 45px; width: 200px; color: white; size: 5; font:oblique;">UPDATE DATABASE</button>
+
+			</form>
+<!-- <a href="/about">About Us</a> -->
+		</body>
+
+	</font>
+</center>
+</html>

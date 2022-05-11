@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Information</title>
+</head>
+<center>
+	<font color="black" size="5" style="font-family: avenir">
+
+		<h1 style="color: DodgerBlue">Student Information</h1>
+
+		<body bgcolor="lightgrey">
+
+			<form>
+
+				<div>
+                    
+					  Net ID: <b>{{ name[0][0] }}</b> <br><br>
+					  
+			  		Name: <b>{{ name[0][1] }}</b> <br><br>
+
+			  		Current Job : <b>{{ name[0][2] }}</b> <br><br>
+
+			  		Hours Planning: <b>{{ name[0][3] }}</b><br><br>
+
+			  		Hours working: <b>{{ name[0][4] }}</b><br><br>
+
+			  		<!-- Image URL: <br> {{ image_url }} <br><br> -->
+
+			  		<!-- <button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;" formaction="http://3.134.115.108:80/getemp">RESET</button><br><br> -->
+
+			  	</div>
+
+			</form>
+			<form action="/getemployee" method ="GET">
+				<button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GO BACK</button><br><br>
+	 </form>
+			<form action="/addemployee" method = "GET">
+				<button type="submit"  style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GO HOME</button><br><br>
+				</form>
+
+		</body>
+
+	</font>
+</center>
+</html>
